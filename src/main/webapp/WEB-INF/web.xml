@@ -1,0 +1,189 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Servlets Tutorial</display-name>
+
+
+  <filter>
+    <filter-name>FilterDemo</filter-name>
+    <filter-class>com.gorbatenko.servletstutorial.FilterDemo</filter-class>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>FilterDemo</filter-name>
+    <url-pattern>/filterDemo</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>SimpleServlet</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.SimpleServleta</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>StatusCodeDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.StatusCodeDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ServletRequestDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.ServletRequestDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ServletResponseDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.ServletResponseDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.PassingParametersUsingGetMethodDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.PassingParametersUsingPostMethodDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SessionTrackingDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.SessionTrackingDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ErrorDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.ErrorDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CookieDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.CookieDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DatabaseDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.DatabaseDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DateTimeDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.DateTimeDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AutoRefreshDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.AutoRefreshDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>RedirectDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.RedirectDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>PageVisitsCounterDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.PageVisitsCounterDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LocaleDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.LocaleDemo</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>FileUploadDemo</servlet-name>
+    <servlet-class>com.gorbatenko.servletstutorial.FileUploadDemo</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SimpleServlet</servlet-name>
+    <url-pattern>/SimpleServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>StatusCodeDemo</servlet-name>
+    <url-pattern>/StatusCodeDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ServletRequestDemo</servlet-name>
+    <url-pattern>/ServletRequestDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ServletResponseDemo</servlet-name>
+    <url-pattern>/ServletResponseDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+    <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+    <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SessionTrackingDemo</servlet-name>
+    <url-pattern>/SessionTrackingDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ErrorDemo</servlet-name>
+    <url-pattern>/ErrorDemo</url-pattern>
+  </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/CookieDemo</url-pattern>
+    </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DatabaseDemo</servlet-name>
+    <url-pattern>/DatabaseDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>DateTimeDemo</servlet-name>
+    <url-pattern>/DateTimeDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AutoRefreshDemo</servlet-name>
+    <url-pattern>/AutoRefreshDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>RedirectDemo</servlet-name>
+    <url-pattern>/RedirectDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>PageVisitsCounterDemo</servlet-name>
+    <url-pattern>/PageVisitsCounterDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LocaleDemo</servlet-name>
+    <url-pattern>/LocaleDemo</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>FileUploadDemo</servlet-name>
+    <url-pattern>/FileUploadDemo</url-pattern>
+  </servlet-mapping>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/ErrorDemo</location>
+  </error-page>
+
+  <error-page>
+    <exception-type>java.lang.Error</exception-type>
+    <location>/ErrorDemo</location>
+  </error-page>
+
+</web-app>
